@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerViewStudentsList = findViewById(R.id.recyclerViewStudentsList);
         studentsList = new ArrayList<>();
-        studentsList.add(new Student("Enubs", "Ron", 123456, "BSIT", 2));
+        studentsList.add(new Student("Ramsey", "Derek", 123456, "BSIT", 2));
         studentsList.add(new Student("Chan", "Jacky", 664455, "BSIT", 2));
         studentsList.add(new Student("Li", "Jet", 888888, "BSIT", 2));
         studentsList.add(new Student("Hu", "Lao", 223344, "BSIT", 2));
@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         studentsList.add(new Student("Zu", "Han", 111100, "BSIT", 2));
         studentsList.add(new Student("Te", "Al", 877778, "BSIT", 2));
 
-        StudentsAdapter studentsAdapter = new StudentsAdapter(studentsList);
-        recyclerViewStudentsList.setAdapter(studentsAdapter);
+        StudentsAdapter sAdapter = new StudentsAdapter(studentsList);
+        recyclerViewStudentsList.setAdapter(sAdapter);
         recyclerViewStudentsList.setLayoutManager(new LinearLayoutManager(this));
     }
 }
