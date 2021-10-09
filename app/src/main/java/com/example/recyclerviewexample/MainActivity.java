@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         studentsList.add(new Student("Zu", "Han", 111100, "BSIT", 2));
         studentsList.add(new Student("Te", "Al", 877778, "BSIT", 2));
 
-        StudentsAdapter studentsAdapter = new StudentsAdapter(studentsList);
-        recyclerViewStudentsList.setAdapter(studentsAdapter);
+        StudentsAdapter sAdapter = new StudentsAdapter(studentsList);
+        recyclerViewStudentsList.setAdapter(sAdapter);
         recyclerViewStudentsList.setLayoutManager(new LinearLayoutManager(this));
     }
 }
